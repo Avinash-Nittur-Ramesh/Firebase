@@ -1,0 +1,24 @@
+{
+  "homeAutomation" : {
+    "balcony" : {
+      "fan" : false,
+      "light" : false
+    },
+    "gparRoom" : {
+      "fan" : false,
+      "light" : true
+    },
+    "hall" : {
+      "fan" : true,
+      "light" : true
+    },
+    "myRoom" : {
+      "fan" : false,
+      "light" : false
+    },
+    "parRoom" : {
+      "fan" : false,
+      "light" : false
+    }
+  }
+}

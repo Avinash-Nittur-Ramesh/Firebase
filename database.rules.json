@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "homeAutomation": {
+      ".read": "auth != null && auth.uid == \"KpAPAwoyZpe0I6Z84fpN2Qn1sm92\"",
+      ".write": "auth != null && auth.token.email == \"rameshavinashnittur@gmail.com\""
+    }
+  }
+}
