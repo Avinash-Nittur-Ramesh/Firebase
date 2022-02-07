@@ -13,6 +13,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"
         import { getDatabase, ref, get, child, onValue, set, update, remove, push } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"
         import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js"
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyCrwPR75LU8IeYAycY6maRWT3CHrvbSG48",
@@ -27,6 +28,8 @@
         const func = async (firebaseConfig) => {
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
+            // Enable Google Analytics
+            const analytics = getAnalytics(app);
             // Authenticate User
             const provider = new GoogleAuthProvider();
             const auth = getAuth();
